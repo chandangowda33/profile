@@ -1,0 +1,28 @@
+@media screen and (max-width: 855px) {
+  .project_card {
+    width: 30rem;
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .project_card {
+    width: 36rem;
+  }
+  .projects_grid {
+    display: flex;
+    flex-direction: column;
+    gap: 2.4rem;
+  }
+  .project {
+    font-size: 3.6rem;
+  }
+}
+
+@media screen and (max-width: 425px) {
+  .project_card {
+    width: 30rem;
+  }
+  .project {
+    font-size: 3rem;
+  }
+}

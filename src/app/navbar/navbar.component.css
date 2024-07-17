@@ -1,0 +1,59 @@
+.navbar_container {
+  height: 4.8rem;
+  display: flex;
+  margin-left: 18vw;
+  padding-top: 2.4rem;
+  gap: 30vw;
+}
+
+.mobile {
+  display: none;
+}
+
+.name {
+  font-size: 2.4rem;
+  font-weight: 700;
+  word-spacing: 1.5px;
+}
+
+.navbar_list {
+  list-style: none;
+  display: flex;
+  font-size: 1.8rem;
+  gap: 3.6rem;
+}
+
+.btn {
+  display: flex;
+  align-items: start;
+  justify-items: flex-start;
+  background-color: #151e38;
+  padding: 0;
+  border: 0;
+  color: #ffffff !important;
+  font-size: 1.8rem;
+  font-weight: 400;
+}
+
+.btn:hover,
+.btn:visited,
+.btn:active {
+  color: #6671a5;
+
+  transition: all 0.3s;
+}
+
+.link {
+  cursor: pointer;
+  text-decoration: none;
+  color: inherit;
+}
+
+.whitefont {
+  color: #ffffff;
+}
+
+.active {
+  color: #6671a5 !important;
+  text-decoration: none;
+}

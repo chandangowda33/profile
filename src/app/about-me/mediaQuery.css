@@ -1,0 +1,40 @@
+@media screen and (max-width: 540px) {
+  .profilePic {
+    display: none;
+    margin: 0;
+    padding: 0;
+  }
+
+  .about_container {
+    display: inline-block;
+  }
+
+  .table {
+    margin-left: 12vw;
+  }
+}
+
+@media screen and (max-width: 430px) {
+  .table {
+    margin-left: 12vw;
+    width: 60%;
+  }
+
+  .heading {
+    font-size: 3.6rem;
+  }
+
+  .header {
+    font-size: 1.5rem;
+  }
+
+  .value {
+    font-size: 1.2rem;
+  }
+}
+
+@media screen and (max-width: 360px) {
+  .table {
+    margin-left: 6vw;
+  }
+}

@@ -1,0 +1,39 @@
+<div class="home_container" id="home" [ngClass]="{ blur: !imageload }">
+  <div class="intro_div">
+    <h1 class="name">
+      Chandan <br class="break" />
+      Gowda
+    </h1>
+    <h3 class="title">Software Engineer</h3>
+  </div>
+  <div class="pic_div">
+    <img
+      (load)="imageloaded()"
+      class="profilePic"
+      sizes="(max-width: 1980px) 100vw, 1980px"
+      srcset="
+        https://firebasestorage.googleapis.com/v0/b/profile-cg-526ac.appspot.com/o/profile_pic_tyvghc_c_scale%2Cw_300.png?alt=media&token=108c5e53-99d7-4f13-9650-13363a2bbafb   300w,
+        https://firebasestorage.googleapis.com/v0/b/profile-cg-526ac.appspot.com/o/profile_pic_tyvghc_c_scale%2Cw_657.png?alt=media&token=2741c4ec-62e1-452f-a155-4dda7bd1cd5d   657w,
+        https://firebasestorage.googleapis.com/v0/b/profile-cg-526ac.appspot.com/o/profile_pic_tyvghc_c_scale%2Cw_895.png?alt=media&token=c36eb37a-bbe5-4bba-849f-4e7c132aa47f   895w,
+        https://firebasestorage.googleapis.com/v0/b/profile-cg-526ac.appspot.com/o/profile_pic_tyvghc_c_scale%2Cw_1239.png?alt=media&token=01bcabc2-0adf-4d65-9f98-da64104bcff5 1085w,
+        https://firebasestorage.googleapis.com/v0/b/profile-cg-526ac.appspot.com/o/profile_pic.png?alt=media&token=57958257-4665-47d5-b4e8-dafee78db9bc                         1980w
+      "
+      src="https://firebasestorage.googleapis.com/v0/b/profile-cg-526ac.appspot.com/o/profile_pic.png?alt=media&token=57958257-4665-47d5-b4e8-dafee78db9bc"
+      alt="profile pic"
+    />
+  </div>
+</div>
+<div class="cvDownloadSection" (click)="downloadFile()">
+  <h5 class="download">Download Resume</h5>
+  <img
+    class="downloadLogo"
+    sizes="(max-width: 1980px) 100vw, 1980px"
+    srcset="
+      https://firebasestorage.googleapis.com/v0/b/profile-cg-526ac.appspot.com/o/download%20(1).svg?alt=media&token=f665e58c-5829-4d6e-8f8a-6cd37e456690  600w,
+      https://firebasestorage.googleapis.com/v0/b/profile-cg-526ac.appspot.com/o/download%20(1).svg?alt=media&token=f665e58c-5829-4d6e-8f8a-6cd37e456690 1980w
+    "
+    src="https://firebasestorage.googleapis.com/v0/b/profile-cg-526ac.appspot.com/o/download%20(1).svg?alt=media&token=f665e58c-5829-4d6e-8f8a-6cd37e456690"
+    alt="download Logo"
+  />
+</div>
+<app-projects id="projects"></app-projects>

@@ -1,0 +1,92 @@
+<div class="navbar_container wider">
+  <h6 class="name">CG</h6>
+  <ul class="navbar_list">
+    <li [class.active]="activeLink === 'home'" (click)="setActiveLink('home')">
+      <a routerLink="/home" class="link" href="#home">Home</a>
+    </li>
+    <li
+      [class.active]="activeLink === 'projects'"
+      (click)="setActiveLink('projects')"
+    >
+      <a class="link" [routerLink]="['/home']" fragment="projects"
+        >My Projects</a
+      >
+    </li>
+    <li
+      [class.active]="activeLink === 'about'"
+      (click)="setActiveLink('about')"
+    >
+      <a class="link" routerLink="/about">About Me</a>
+    </li>
+    <li
+      [class.active]="activeLink === 'career'"
+      (click)="setActiveLink('career')"
+    >
+      <a class="link" routerLink="/career">Career</a>
+    </li>
+    <li
+      [class.active]="activeLink === 'contact'"
+      (click)="setActiveLink('contact')"
+    >
+      <a class="link" [routerLink]="['/home']" fragment="contact">Contact</a>
+    </li>
+  </ul>
+</div>
+
+<div class="navbar_container mobile" [ngClass]="{ background: menu }">
+  <mat-icon (click)="menuToggle()" *ngIf="!menu">menu</mat-icon>
+  <mat-icon (click)="menuToggle()" *ngIf="menu">close</mat-icon>
+  <div class="menu_div" [ngClass]="{ display: menu }">
+    <ul class="list">
+      <li
+        [class.active]="activeLink === 'home'"
+        (click)="setActiveLink('home')"
+      >
+        <a
+          [routerLink]="['/home']"
+          class="link"
+          (click)="menuToggle()"
+          href="#home"
+          >Home</a
+        >
+      </li>
+      <li
+        [class.active]="activeLink === 'projects'"
+        (click)="setActiveLink('projects')"
+      >
+        <a
+          class="link"
+          (click)="menuToggle()"
+          href="#projects"
+          [routerLink]="['/project']"
+          fragment="projects"
+          >My Projects</a
+        >
+      </li>
+      <li
+        [class.active]="activeLink === 'about'"
+        (click)="setActiveLink('about')"
+      >
+        <a class="link" (click)="menuToggle()" routerLink="/about">About Me</a>
+      </li>
+      <li
+        [class.active]="activeLink === 'career'"
+        (click)="setActiveLink('career')"
+      >
+        <a class="link" (click)="menuToggle()" routerLink="/career">Career</a>
+      </li>
+      <li
+        [class.active]="activeLink === 'contact'"
+        (click)="setActiveLink('contact')"
+      >
+        <a
+          class="link"
+          (click)="menuToggle()"
+          [routerLink]="['/home']"
+          fragment="contact"
+          >Contact</a
+        >
+      </li>
+    </ul>
+  </div>
+</div>

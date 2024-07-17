@@ -1,0 +1,53 @@
+.about_container {
+  /* margin-top: 1.2rem; */
+  display: flex;
+  gap: 1.2rem;
+}
+
+.profilePic {
+  margin: 4.8rem 0 0 1.2rem;
+  height: 74vh;
+  width: 27vw;
+}
+
+.text_div {
+  flex: 0 0 60%;
+  line-height: 1.3;
+  font-size: 1.5rem;
+  text-align: left;
+  margin: 0 3.6rem 3.6rem 2.4rem;
+}
+
+.pic_div {
+  flex: 0 0 40%;
+}
+
+.heading {
+  font-size: 5.4rem;
+  font-weight: 700;
+  text-align: center;
+}
+
+.table {
+  margin: 1.2rem 15vw;
+  width: 70vw;
+  border-collapse: collapse;
+}
+
+.header,
+.value {
+  border: 1px solid black;
+  padding: 8px;
+  text-align: left;
+  font-size: 1.8rem;
+  text-align: center;
+}
+
+.education_div {
+  background-color: #1a365d;
+  padding: 1.2rem 0;
+}
+
+.blur {
+  filter: blur(100px);
+}
