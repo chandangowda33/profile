@@ -94,7 +94,8 @@
   }
 
   .profilePic {
-    height: 48rem;
+    margin-top: -1.2rem;
+    height: 45rem;
     width: 24rem;
   }
 }
